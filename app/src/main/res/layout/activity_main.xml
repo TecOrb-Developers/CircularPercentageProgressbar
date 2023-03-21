@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:cpb="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    tools:context=".MainActivity">
+
+    <com.tecorb.circularprogressbar.CircleProgressBar
+        android:id="@+id/asd"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        cpb:progressColor="#e76130"
+        cpb:backgroundColor="#e7b330"
+        cpb:backgroundWidth="10"
+        cpb:textSize="12dp"
+        cpb:roundedCorners="true"
+        cpb:suffix="%"
+        cpb:prefix=""
+        cpb:progressTextColor="#f9916b"
+        cpb:progressText="50"
+        cpb:maxValue="100"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+       />
+
+    <SeekBar
+        android:id="@+id/btnSeekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="40dp"
+        android:max="100"
+        android:progress="50"
+        app:layout_constraintTop_toBottomOf="@+id/asd">
+    </SeekBar>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
