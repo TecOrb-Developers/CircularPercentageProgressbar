@@ -131,7 +131,6 @@ public class CircleProgressBar extends View {
             float textHeight = textPaint.descent() + textPaint.ascent();
             canvas.drawText(drawnText, (getWidth() - textPaint.measureText(drawnText)) / 2.0f, (getWidth() - textHeight) / 2.0f, textPaint);
         }
-
     }
     public void setProgress(float f){
         drawUpto = f;
